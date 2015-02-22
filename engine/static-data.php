@@ -15,4 +15,9 @@ $gameData[] = [
 	'platform'		=> 'Mac, PC',
 	'genre'			=> 'Hero',
 ];
+$gameData[] = [
+	'title' 		=> 'GoldenEye',
+	'platform'		=> 'N64',
+	'genre'			=> 'FPS',
+];
 ?>
