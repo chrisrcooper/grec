@@ -1,3 +1,4 @@
+<?php require_once('engine/static-data.php'); ?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -20,7 +21,9 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <h1>grec</h1>
+        <p>Game Recommendation Engine.</p>
+        <p>Game Data Loaded: <pre><?php var_dump($gameData); ?></pre></p>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
