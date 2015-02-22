@@ -23,6 +23,6 @@ $gameData[] = [
 $gameData[] = [
 	'title' 		=> 'Minecraft',
 	'platform'		=> 'PC',
-	'genre'			=> 'Open World',
+	'genre'			=> 'Sandbox',
 ];
 ?>
