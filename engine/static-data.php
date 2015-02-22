@@ -20,4 +20,9 @@ $gameData[] = [
 	'platform'		=> 'N64',
 	'genre'			=> 'FPS',
 ];
+$gameData[] = [
+	'title' 		=> 'Minecraft',
+	'platform'		=> 'PC',
+	'genre'			=> 'Open World',
+];
 ?>
