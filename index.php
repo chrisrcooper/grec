@@ -1,4 +1,5 @@
 <?php require_once('engine/static-data.php'); ?>
+<?php require_once('engine/inc.functions.php'); ?>
 <!doctype html>
 <html class="no-js" lang="">
     <head>
@@ -23,7 +24,14 @@
         <!-- Add your site or application content here -->
         <h1>grec</h1>
         <p>Game Recommendation Engine.</p>
-        <p>Game Data Loaded: <pre><?php var_dump($gameData); ?></pre></p>
+        <div>
+        	<p>Based on Game AND User data, play:</p>
+        	<p><strong><?php print userSuggest($users, $gameData); ?></strong></p>
+        </div>
+        <div style="font-size: 10px;">
+        	<p>User Data Loaded: <pre><?php var_dump($users); ?></pre></p>
+        	<p>Game Data Loaded: <pre><?php var_dump($gameData); ?></pre></p>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
