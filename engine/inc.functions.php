@@ -8,6 +8,7 @@ function userSuggest($users, $gameData) {
 	//$platforms now defines the array which contains the user platforms to 
 	//search for
 	
+	$recommendation = array();
 	foreach ($gameData as $game) {
 		
 		if(count(array_intersect($game['platform'], $platforms)) == count($platforms)){
@@ -18,10 +19,14 @@ function userSuggest($users, $gameData) {
 	
 	//now cleanup the $output
 	$output = '';
-	foreach ($recommendation as $title) {
-		$output .= $title . ', ';
-	}
-	return $output;
+	if ($recommendation) {
+		foreach ($recommendation as $title) {
+			$output .= $title . ', ';
+		}
+		return $output;
+	} else 
+		return "Cards :-(";
+		
 }
 
 ?>

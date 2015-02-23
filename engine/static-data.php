@@ -7,7 +7,7 @@
 
 $users[] = [
 	'name'			=> 'Chris',
-	'platform'		=> 'Mac',
+	'platform'		=> 'PC',
 ];
 $users[] = [
 	'name'			=> 'Grant',
